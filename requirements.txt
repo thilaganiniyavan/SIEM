@@ -1,0 +1,11 @@
+torch
+pandas
+scikit-learn
+fastapi
+uvicorn
+matplotlib
+networkx
+kafka-python
+transformers
+openai
+numpy
