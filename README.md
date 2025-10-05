@@ -20,35 +20,7 @@ FastAPI microservice exposing scoring and rule suggestion endpoints
 
 Docker containerization for easy deployment
 
-Folder structure
-text
-hybrid_siem_full/
-│
-├── data/
-│   ├── sample_logs.csv            # synthetic logs (generated)
-│   ├── features.csv               # extracted features
-│   └── dbn_model.pt               # saved trained model
-│
-├── src/
-│   ├── generate_logs.py           # synthetic log generator
-│   ├── ingestion_spark.py         # Spark batch + streaming ingestion templates
-│   ├── ingestion_kafka_consumer.py# Kafka consumer template (optional)
-│   ├── features.py                # feature engineering (incl. graph features)
-│   ├── models/                   # RBM, DBN, Autoencoder implementations
-│   ├── trainer.py                # orchestrates pretraining, fine-tuning, evaluation
-│   ├── evaluator.py              # evaluation metrics and ROC plotting
-│   ├── llm_rule_optimizer.py     # LLM-based rule optimization module
-│   ├── feedback_loop.py          # collects analyst feedback and triggers retrain
-│   ├── api/
-│   │   ├── app.py                # FastAPI service: scoring and feedback endpoints
-│   │   └── schemas.py            # Pydantic schemas for API request validation
-│   └── utils.py                 # helper functions (logging, graph features)
-│
-├── docker/
-│   ├── Dockerfile                # Docker image for API service
-│
-├── requirements.txt             # Python dependencies
-└── README.md                    
+
 
 
 Quickstart: Running Locally
